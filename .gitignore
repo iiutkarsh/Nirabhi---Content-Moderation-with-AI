@@ -1,0 +1,13 @@
+*.pyc
+__pycache__/
+*.sqlite3
+.env
+.venv/
+db.sqlite3
+/staticfiles/
+media/
+*.log
+node_modules/
+Hackathon 2024_1rrvPFO.pdf
+firestore.indexes.json
+/public
