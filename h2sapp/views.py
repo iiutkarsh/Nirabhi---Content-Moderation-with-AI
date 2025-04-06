@@ -1,6 +1,17 @@
 from django.shortcuts import render
 # from PyMuPDF import fitz
 # Create your views here.
+from django.http import JsonResponse
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('api/hello/', views.hello_api, name='hello_api'),
+]
+
+def hello_api(request):
+    return JsonResponse({'message': 'Hello from the backend!'})
+
 def base(request):
     return render(request,'h2sapp/base.html')
 
