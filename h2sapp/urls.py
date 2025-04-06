@@ -9,7 +9,6 @@ urlpatterns = [
     path("document/", moderate_document, name="moderate_document"),
     path("text/", views.text, name="text"),
     path("analyze/", views.analyze_text, name="analyze"),
-    path('api/hello/', views.hello_api, name='hello_api'),
-    path("result/",views.result,name="result")  
-
+    path("result/",views.result,name="result"),
+    path('api/hello/', views.hello_api, name='hello_api')
 ]
