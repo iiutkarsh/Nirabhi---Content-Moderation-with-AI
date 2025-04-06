@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="navbar">
+        <a id="home" href="/">Home</a>
+        <a id="report">Report</a>
+        <a id="login">Login</a>
+        <a id="register">Register</a>
+    </div>
+    
+    <!-- Report Section -->
+    <div class="divbox">
+        <div id="reportpage" class="section" style="display:none;">
+            <h1>Report a Page</h1>
+            <p>Please log in to report abusive or objectionable content.</p>
+            <a>Login</a>
+            <a>Register</a>
+        </div>
+    </div>
+    <!-- Login Section -->
+    <div class="divbox">
+        <div id="loginpage" class="section" style="display:none;">
+            <h1>Login</h1>
+            <form>
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email" required />
+
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password" required />
+
+                <a type="submit">Login</a>
+            </form>
+        </div>
+    </div>
+    <!-- Register Section -->
+    <div class="divbox">
+        <div id="registerpage" class="section" style="display:none;">
+            <h1>Register</h1>
+            <form>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your name" required />
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email" required />
+
+                <label>Password:</label>
+                <input type="password" placeholder="Create a password" required />
+
+                <a type="submit">Register</a>
+            </form>
+        </div>
+    </div>
+    <!--textUrlanalysis-->
+    <!-- home section -->
+    <div id="homepage" class="section">
+        <div class="discription">
+            <h2>Your Shield Against Online Harm</h2>
+            <h3>AI-Powered Content Analysis</h3>
+        </div>
+        
+    </div>
+    {% block content %}
+    <div class="tools">
+        <div class="tool"><img id="t1" src="{% static 'images\audiototext.jpg'%}" alt="Moderation img">
+            <a class="btn1" href="document/" >Document for Analysis</a></div>
+        <div class="tool"><img id="t1" src="{% static 'images\url.jpg'%}" alt="Moderation img">
+            <a class="btn" href="url/">URL for Analysis</a></div>
+        <div class="tool"><img id="t1" src="{% static 'images\atot.jpg'%}" alt="Moderation img">
+            <a class="btn" href="text/">Text for Analysis</a></div>
+        <div class="tool"><a class="btn">voice&video Both</a></div>
+        <div class="tool"><a class="btn">For More Tool</a></div>
+    </div>
+    <div class="divbox">
+        <div id="analysispage" class="section" style="display: none;">
+            <h1>Content Analyzer</h1>
+            <p>Analyze any text or web page for abusive or objectionable content.</p>
+
+            <label for="inputType">Choose Input Type:</label>
+            <select id="inputType">
+                <option value="text">Text</option>
+                <option value="url">URL</option>
+            </select>
+            <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+            <input type="url" id="urlInput" placeholder="Enter URL to analyze..." style="display: none;" />
+            <br>
+            <a>Analyze</a>
+            <p id="resultMessage"></p>
+        </div>
+    </div>
+    {% endblock %}
+    {% comment %} <script src="{% static 'js/style.js'%}"></script> {% endcomment %}
+</body>
+
+</html>

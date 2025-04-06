@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "vscode"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdc"
+      cloudSql:
+        instanceId: "vscode-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

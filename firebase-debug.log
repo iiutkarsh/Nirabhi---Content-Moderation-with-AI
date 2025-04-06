@@ -1,0 +1,504 @@
+[debug] [2025-04-04T18:52:34.333Z] ----------------------------------------------------------------------
+[debug] [2025-04-04T18:52:34.336Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\iiutk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-04T18:52:34.336Z] CLI Version:   14.0.0
+[debug] [2025-04-04T18:52:34.336Z] Platform:      win32
+[debug] [2025-04-04T18:52:34.336Z] Node Version:  v22.13.1
+[debug] [2025-04-04T18:52:34.336Z] Time:          Sat Apr 05 2025 00:22:34 GMT+0530 (India Standard Time)
+[debug] [2025-04-04T18:52:34.336Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-04T18:52:34.344Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-04T18:52:34.344Z] > authorizing via signed-in user (prince16us@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\iiutk\OneDrive\Desktop\GDG\H2S\H2S
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-04T18:52:38.737Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:38.737Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:38.738Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-04-04T18:52:39.658Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-04T18:52:39.658Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project nirbhi-d7673 (Nirbhi) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-04-04T18:52:40.210Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:40.210Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:40.210Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo [none]
+[debug] [2025-04-04T18:52:40.854Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo 200
+[debug] [2025-04-04T18:52:40.854Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo {"name":"projects/nirbhi-d7673/billingInfo","projectId":"nirbhi-d7673","billingAccountName":"billingAccounts/01E183-DD8A48-041ECA","billingEnabled":true}
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2025-04-04T18:52:40.855Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:40.855Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:40.855Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-04-04T18:52:40.855Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:52:42.844Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-04-04T18:52:42.844Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firebasedataconnect.googleapis.com [omitted]
+[info] +  dataconnect: required API firebasedataconnect.googleapis.com is enabled 
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-04-04T18:52:42.845Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:42.845Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:42.845Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/sqladmin.googleapis.com [none]
+[debug] [2025-04-04T18:52:42.845Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/sqladmin.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:52:44.627Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/sqladmin.googleapis.com 200
+[debug] [2025-04-04T18:52:44.627Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect: ensuring required API compute.googleapis.com is enabled... 
+[debug] [2025-04-04T18:52:44.628Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:44.628Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:44.628Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/compute.googleapis.com [none]
+[debug] [2025-04-04T18:52:44.628Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/compute.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:52:45.803Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/compute.googleapis.com 200
+[debug] [2025-04-04T18:52:45.803Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/compute.googleapis.com [omitted]
+[info] +  dataconnect: required API compute.googleapis.com is enabled 
+[debug] [2025-04-04T18:52:45.804Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:45.804Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:45.804Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/-/services [none]
+[debug] [2025-04-04T18:52:48.010Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/-/services 200
+[debug] [2025-04-04T18:52:48.010Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/-/services {"services":[{"name":"projects/nirbhi-d7673/locations/us-central1/services/vscode","createTime":"2025-03-24T13:26:55.897741230Z","updateTime":"2025-03-24T13:26:57.241406365Z","uid":"e3ffb1c0-e665-4f94-96a0-fb7226a68507","reconciling":false,"etag":"8KakCo2TlRLDES8Pzn4JwWEjLPnWmXElCZuCYR4GIMI"}]}
+[debug] [2025-04-04T18:52:48.010Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:48.010Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:48.010Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/schemas/main [none]
+[debug] [2025-04-04T18:52:49.745Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/schemas/main 200
+[debug] [2025-04-04T18:52:49.746Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/schemas/main {"name":"projects/nirbhi-d7673/locations/us-central1/services/vscode/schemas/main","createTime":"2025-03-24T13:48:13.955058984Z","updateTime":"2025-03-28T14:00:17.886863327Z","source":{"files":[{"path":"schema.gql","content":"# # Example schema for simple movie review app\n\n# # User table is keyed by Firebase Auth UID.\n# type User @table {\n#   # `@default(expr: \"auth.uid\")` sets it to Firebase Auth UID during insert and upsert.\n#   id: String! @default(expr: \"auth.uid\")\n#   username: String! @col(dataType: \"varchar(50)\")\n#   # The `user: User!` field in the Review table generates the following one-to-many query field.\n#   #  reviews_on_user: [Review!]!\n#   # The `Review` join table the following many-to-many query field.\n#   #  movies_via_Review: [Movie!]!\n# }\n\n# # Movie is keyed by a randomly generated UUID.\n# type Movie @table {\n#   # If you do not pass a 'key' to `@table`, Data Connect automatically adds the following 'id' column.\n#   # Feel free to uncomment and customize it.\n#   #  id: UUID! @default(expr: \"uuidV4()\")\n#   title: String!\n#   imageUrl: String!\n#   genre: String\n# }\n\n# # MovieMetadata is a metadata attached to a Movie.\n# # Movie <-> MovieMetadata is a one-to-one relationship\n# type MovieMetadata @table {\n#   # @unique ensures each Movie can only one MovieMetadata.\n#   movie: Movie! @unique\n#   # The movie field adds the following foreign key field. Feel free to uncomment and customize it.\n#   #  movieId: UUID!\n#   rating: Float\n#   releaseYear: Int\n#   description: String\n# }\n\n# # Reviews is a join table between User and Movie.\n# # It has a composite primary keys `userUid` and `movieId`.\n# # A user can leave reviews for many movies. A movie can have reviews from many users.\n# # User  <-> Review is a one-to-many relationship\n# # Movie <-> Review is a one-to-many relationship\n# # Movie <-> User is a many-to-many relationship\n# type Review @table(name: \"Reviews\", key: [\"movie\", \"user\"]) {\n#   user: User!\n#   # The user field adds the following foreign key field. Feel free to uncomment and customize it.\n#   #  userUid: String!\n#   movie: Movie!\n#   # The movie field adds the following foreign key field. Feel free to uncomment and customize it.\n#   #  movieId: UUID!\n#   rating: Int\n#   reviewText: String\n#   reviewDate: Date! @default(expr: \"request.time\")\n# }\n"}]},"uid":"3b580d99-ef83-44bb-8e7e-5f67f2da0512","reconciling":false,"datasources":[{"postgresql":{"database":"fdc","cloudSql":{"instance":"projects/nirbhi-d7673/locations/us-central1/instances/vscode-fdc"},"schemaValidation":"STRICT"}}],"etag":"sM4lWszQVbHGLXXw7e8Im14oxkHB6d7vtwdMG16hkuc"}
+[debug] [2025-04-04T18:52:51.262Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:51.262Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:51.262Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/connectors pageSize=100&pageToken=&fields=connectors.name%2Cconnectors.source.files
+[debug] [2025-04-04T18:52:51.674Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/connectors 200
+[debug] [2025-04-04T18:52:51.674Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/connectors {"connectors":[{"name":"projects/nirbhi-d7673/locations/us-central1/services/vscode/connectors/default","source":{"files":[{"path":"mutations.gql","content":"# # Example mutations for a simple movie app\n\n# # Create a movie based on user input\n# mutation CreateMovie($title: String!, $genre: String!, $imageUrl: String!)\n# @auth(level: USER_EMAIL_VERIFIED) {\n#   movie_insert(data: { title: $title, genre: $genre, imageUrl: $imageUrl })\n# }\n\n# # Upsert (update or insert) a user's username based on their auth.uid\n# mutation UpsertUser($username: String!) @auth(level: USER) {\n#   # The \"auth.uid\" server value ensures that users can only register their own user.\n#   user_upsert(data: { id_expr: \"auth.uid\", username: $username })\n# }\n\n# # Add a review for a movie\n# mutation AddReview($movieId: UUID!, $rating: Int!, $reviewText: String!)\n# @auth(level: USER) {\n#   review_upsert(\n#     data: {\n#       userId_expr: \"auth.uid\"\n#       movieId: $movieId\n#       rating: $rating\n#       reviewText: $reviewText\n#       # reviewDate defaults to today in the schema. No need to set it manually.\n#     }\n#   )\n# }\n\n# # Logged in user can delete their review for a movie\n# mutation DeleteReview($movieId: UUID!) @auth(level: USER) {\n#   # The \"auth.uid\" server value ensures that users can only delete their own reviews.\n#   review_delete(key: { userId_expr: \"auth.uid\", movieId: $movieId })\n# }\n"},{"path":"queries.gql","content":"# # Example queries for a simple movie app.\n\n# # @auth() directives control who can call each operation.\n# # Anyone should be able to list all movies, so the auth level is set to PUBLIC\n# query ListMovies @auth(level: PUBLIC) {\n#   movies {\n#     id\n#     title\n#     imageUrl\n#     genre\n#   }\n# }\n\n# # List all users, only admins should be able to list all users, so we use NO_ACCESS\n# query ListUsers @auth(level: NO_ACCESS) {\n#   users {\n#     id\n#     username\n#   }\n# }\n\n# # Logged in users can list all their reviews and movie titles associated with the review\n# # Since the query uses the uid of the current authenticated user, we set auth level to USER\n# query ListUserReviews @auth(level: USER) {\n#   user(key: { id_expr: \"auth.uid\" }) {\n#     id\n#     username\n#     # <field>_on_<foreign_key_field> makes it easy to grab info from another table\n#     # Here, we use it to grab all the reviews written by the user.\n#     reviews: reviews_on_user {\n#       rating\n#       reviewDate\n#       reviewText\n#       movie {\n#         id\n#         title\n#       }\n#     }\n#   }\n# }\n\n# # Get movie by id\n# query GetMovieById($id: UUID!) @auth(level: PUBLIC) {\n#   movie(id: $id) {\n#     id\n#     title\n#     imageUrl\n#     genre\n#     metadata: movieMetadata_on_movie {\n#       rating\n#       releaseYear\n#       description\n#     }\n#     reviews: reviews_on_movie {\n#       reviewText\n#       reviewDate\n#       rating\n#       user {\n#         id\n#         username\n#       }\n#     }\n#   }\n# }\n\n# # Search for movies, actors, and reviews\n# query SearchMovie($titleInput: String, $genre: String) @auth(level: PUBLIC) {\n#   movies(\n#     where: {\n#       _and: [{ genre: { eq: $genre } }, { title: { contains: $titleInput } }]\n#     }\n#   ) {\n#     id\n#     title\n#     genre\n#     imageUrl\n#   }\n# }\n"}]}}]}
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] i  dataconnect\connector\connector.yaml is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  If you'd like to add the generated SDK to your app later, run firebase init dataconnect:sdk 
+[info] 
+=== Firestore Setup
+[debug] [2025-04-04T18:52:51.679Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:51.679Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:51.679Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firestore.googleapis.com [none]
+[debug] [2025-04-04T18:52:51.679Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firestore.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:52:53.627Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firestore.googleapis.com 200
+[debug] [2025-04-04T18:52:53.628Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firestore.googleapis.com [omitted]
+[debug] [2025-04-04T18:52:53.628Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:53.628Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:53.628Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default) [none]
+[debug] [2025-04-04T18:52:54.121Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default) 200
+[debug] [2025-04-04T18:52:54.122Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default) {"name":"projects/nirbhi-d7673/databases/(default)","uid":"65e6fd93-a931-4b30-af2e-ce57826a7d18","createTime":"2025-03-26T07:52:20.509562Z","updateTime":"2025-03-26T07:52:20.509562Z","locationId":"asia-south2","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-04-04T17:52:54.209608Z","appEngineIntegrationMode":"DISABLED","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IJ28+aaGv4wDMIaG5fK1tIwD"}
+[debug] [2025-04-04T18:52:54.122Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-04T18:52:54.122Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-04T18:52:54.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-04T18:52:54.122Z] > authorizing via signed-in user (prince16us@gmail.com)
+[debug] [2025-04-04T18:52:54.122Z] [iam] checking project nirbhi-d7673 for permissions ["firebase.projects.get"]
+[debug] [2025-04-04T18:52:54.122Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:54.122Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:52:54.122Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions [none]
+[debug] [2025-04-04T18:52:54.122Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:52:54.122Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:52:55.905Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions 200
+[debug] [2025-04-04T18:52:55.905Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-04-04T18:53:05.621Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:05.621Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:05.621Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/nirbhi-d7673/releases pageSize=10&pageToken=
+[debug] [2025-04-04T18:53:07.241Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/nirbhi-d7673/releases 200
+[debug] [2025-04-04T18:53:07.241Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/nirbhi-d7673/releases {"releases":[{"name":"projects/nirbhi-d7673/releases/cloud.firestore","rulesetName":"projects/nirbhi-d7673/rulesets/8de13964-063c-449e-83e7-336b56000a51","createTime":"2025-03-26T07:52:33.874008Z","updateTime":"2025-03-31T14:14:38.815624Z"},{"name":"projects/nirbhi-d7673/releases/firebase.storage/nirbhi-d7673.firebasestorage.app","rulesetName":"projects/nirbhi-d7673/rulesets/2e9bec03-bfb6-4ee4-a456-33c28d892c61","createTime":"2025-03-26T20:58:59.140082Z","updateTime":"2025-03-28T13:59:36.013835Z"}]}
+[debug] [2025-04-04T18:53:07.251Z] Found ruleset: projects/nirbhi-d7673/rulesets/8de13964-063c-449e-83e7-336b56000a51
+[debug] [2025-04-04T18:53:07.251Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:07.251Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:07.251Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/nirbhi-d7673/rulesets/8de13964-063c-449e-83e7-336b56000a51 [none]
+[debug] [2025-04-04T18:53:08.649Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/nirbhi-d7673/rulesets/8de13964-063c-449e-83e7-336b56000a51 200
+[debug] [2025-04-04T18:53:08.649Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/nirbhi-d7673/rulesets/8de13964-063c-449e-83e7-336b56000a51 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-04-04T18:53:12.523Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:12.523Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:12.523Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:12.523Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:12.523Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-04-04T18:53:12.525Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-04-04T18:53:12.907Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-04-04T18:53:12.907Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-04-04T18:53:12.945Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-04-04T18:53:12.945Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/nirbhi-d7673/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2025-04-04T18:53:15.756Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-04T18:53:15.756Z] > authorizing via signed-in user (prince16us@gmail.com)
+[debug] [2025-04-04T18:53:15.756Z] [iam] checking project nirbhi-d7673 for permissions ["firebase.projects.get"]
+[debug] [2025-04-04T18:53:15.756Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:15.756Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:15.756Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions [none]
+[debug] [2025-04-04T18:53:15.756Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:53:15.756Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:53:17.386Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions 200
+[debug] [2025-04-04T18:53:17.386Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:53:17.386Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:17.386Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:17.386Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:17.386Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:53:17.386Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-04T18:53:17.386Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:53:17.388Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-04T18:53:17.388Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:53:19.330Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-04T18:53:19.330Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-04T18:53:19.337Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-04T18:53:19.337Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] i  Skipping write of functions/package.json 
+[info] i  functions/.eslintrc.js is unchanged 
+[info] +  Wrote functions/tsconfig.json 
+[info] i  functions/tsconfig.dev.json is unchanged 
+[info] i  functions/src/index.ts is unchanged 
+[info] i  Skipping write of functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.4.0
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] 
+Login to Google Cloud using:
+[info]     gcloud auth application-default login --project undefined
+
+[info] Then start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-04-04T18:54:06.241Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-04T18:54:06.241Z] > authorizing via signed-in user (prince16us@gmail.com)
+[debug] [2025-04-04T18:54:06.241Z] [iam] checking project nirbhi-d7673 for permissions ["firebase.projects.get"]
+[debug] [2025-04-04T18:54:06.241Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:54:06.241Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:54:06.241Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions [none]
+[debug] [2025-04-04T18:54:06.241Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:54:06.241Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:54:07.881Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions 200
+[debug] [2025-04-04T18:54:07.881Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:54:07.881Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:54:07.881Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:54:07.881Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:54:07.881Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:54:07.881Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-04T18:54:07.881Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:54:07.882Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-04T18:54:07.882Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:54:10.047Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-04T18:54:10.047Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-04T18:54:10.061Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-04T18:54:10.061Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote nirbhi/requirements.txt 
+[info] +  Wrote nirbhi/.gitignore 
+[info] +  Wrote nirbhi/main.py 
+[debug] [2025-04-04T18:54:42.321Z] Running command with virtualenv: command="C:\Users\iiutk\OneDrive\Desktop\GDG\H2S\H2S\nirbhi\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2025-04-04T18:54:45.935Z] Error: spawn "C:\Users\iiutk\OneDrive\Desktop\GDG\H2S\H2S\nirbhi\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\iiutk\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\iiutk\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\iiutk\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-04-04T18:55:10.431Z] ----------------------------------------------------------------------
+[debug] [2025-04-04T18:55:10.433Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\iiutk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-04T18:55:10.434Z] CLI Version:   14.0.0
+[debug] [2025-04-04T18:55:10.434Z] Platform:      win32
+[debug] [2025-04-04T18:55:10.434Z] Node Version:  v22.13.1
+[debug] [2025-04-04T18:55:10.434Z] Time:          Sat Apr 05 2025 00:25:10 GMT+0530 (India Standard Time)
+[debug] [2025-04-04T18:55:10.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-04T18:55:10.442Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-04T18:55:10.442Z] > authorizing via signed-in user (prince16us@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\iiutk\OneDrive\Desktop\GDG\H2S\H2S
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-04T18:55:25.637Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:25.637Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:25.638Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-04-04T18:55:26.863Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-04T18:55:26.863Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project nirbhi-d7673 (Nirbhi) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-04-04T18:55:40.318Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:40.318Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:40.318Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo [none]
+[debug] [2025-04-04T18:55:42.587Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo 200
+[debug] [2025-04-04T18:55:42.587Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo {"name":"projects/nirbhi-d7673/billingInfo","projectId":"nirbhi-d7673","billingAccountName":"billingAccounts/01E183-DD8A48-041ECA","billingEnabled":true}
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2025-04-04T18:55:42.588Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:42.588Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:42.588Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-04-04T18:55:42.588Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:55:44.707Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-04-04T18:55:44.707Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firebasedataconnect.googleapis.com [omitted]
+[info] +  dataconnect: required API firebasedataconnect.googleapis.com is enabled 
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-04-04T18:55:44.708Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:44.708Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:44.708Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/sqladmin.googleapis.com [none]
+[debug] [2025-04-04T18:55:44.708Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/sqladmin.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:55:45.237Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/sqladmin.googleapis.com 200
+[debug] [2025-04-04T18:55:45.238Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect: ensuring required API compute.googleapis.com is enabled... 
+[debug] [2025-04-04T18:55:45.239Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:45.239Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:45.239Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/compute.googleapis.com [none]
+[debug] [2025-04-04T18:55:45.239Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/compute.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:55:47.548Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/compute.googleapis.com 200
+[debug] [2025-04-04T18:55:47.548Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/compute.googleapis.com [omitted]
+[info] +  dataconnect: required API compute.googleapis.com is enabled 
+[debug] [2025-04-04T18:55:47.549Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:47.549Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:47.549Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/-/services [none]
+[debug] [2025-04-04T18:55:49.920Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/-/services 200
+[debug] [2025-04-04T18:55:49.920Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/-/services {"services":[{"name":"projects/nirbhi-d7673/locations/us-central1/services/vscode","createTime":"2025-03-24T13:26:55.897741230Z","updateTime":"2025-03-24T13:26:57.241406365Z","uid":"e3ffb1c0-e665-4f94-96a0-fb7226a68507","reconciling":false,"etag":"8KakCo2TlRLDES8Pzn4JwWEjLPnWmXElCZuCYR4GIMI"}]}
+[debug] [2025-04-04T18:55:49.921Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:49.921Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:55:49.921Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/schemas/main [none]
+[debug] [2025-04-04T18:55:51.653Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/schemas/main 200
+[debug] [2025-04-04T18:55:51.654Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/schemas/main {"name":"projects/nirbhi-d7673/locations/us-central1/services/vscode/schemas/main","createTime":"2025-03-24T13:48:13.955058984Z","updateTime":"2025-03-28T14:00:17.886863327Z","source":{"files":[{"path":"schema.gql","content":"# # Example schema for simple movie review app\n\n# # User table is keyed by Firebase Auth UID.\n# type User @table {\n#   # `@default(expr: \"auth.uid\")` sets it to Firebase Auth UID during insert and upsert.\n#   id: String! @default(expr: \"auth.uid\")\n#   username: String! @col(dataType: \"varchar(50)\")\n#   # The `user: User!` field in the Review table generates the following one-to-many query field.\n#   #  reviews_on_user: [Review!]!\n#   # The `Review` join table the following many-to-many query field.\n#   #  movies_via_Review: [Movie!]!\n# }\n\n# # Movie is keyed by a randomly generated UUID.\n# type Movie @table {\n#   # If you do not pass a 'key' to `@table`, Data Connect automatically adds the following 'id' column.\n#   # Feel free to uncomment and customize it.\n#   #  id: UUID! @default(expr: \"uuidV4()\")\n#   title: String!\n#   imageUrl: String!\n#   genre: String\n# }\n\n# # MovieMetadata is a metadata attached to a Movie.\n# # Movie <-> MovieMetadata is a one-to-one relationship\n# type MovieMetadata @table {\n#   # @unique ensures each Movie can only one MovieMetadata.\n#   movie: Movie! @unique\n#   # The movie field adds the following foreign key field. Feel free to uncomment and customize it.\n#   #  movieId: UUID!\n#   rating: Float\n#   releaseYear: Int\n#   description: String\n# }\n\n# # Reviews is a join table between User and Movie.\n# # It has a composite primary keys `userUid` and `movieId`.\n# # A user can leave reviews for many movies. A movie can have reviews from many users.\n# # User  <-> Review is a one-to-many relationship\n# # Movie <-> Review is a one-to-many relationship\n# # Movie <-> User is a many-to-many relationship\n# type Review @table(name: \"Reviews\", key: [\"movie\", \"user\"]) {\n#   user: User!\n#   # The user field adds the following foreign key field. Feel free to uncomment and customize it.\n#   #  userUid: String!\n#   movie: Movie!\n#   # The movie field adds the following foreign key field. Feel free to uncomment and customize it.\n#   #  movieId: UUID!\n#   rating: Int\n#   reviewText: String\n#   reviewDate: Date! @default(expr: \"request.time\")\n# }\n"}]},"uid":"3b580d99-ef83-44bb-8e7e-5f67f2da0512","reconciling":false,"datasources":[{"postgresql":{"database":"fdc","cloudSql":{"instance":"projects/nirbhi-d7673/locations/us-central1/instances/vscode-fdc"},"schemaValidation":"STRICT"}}],"etag":"sM4lWszQVbHGLXXw7e8Im14oxkHB6d7vtwdMG16hkuc"}
+[debug] [2025-04-04T18:56:09.728Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:09.729Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:09.730Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/connectors pageSize=100&pageToken=&fields=connectors.name%2Cconnectors.source.files
+[debug] [2025-04-04T18:56:11.710Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/connectors 200
+[debug] [2025-04-04T18:56:11.710Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/nirbhi-d7673/locations/us-central1/services/vscode/connectors {"connectors":[{"name":"projects/nirbhi-d7673/locations/us-central1/services/vscode/connectors/default","source":{"files":[{"path":"mutations.gql","content":"# # Example mutations for a simple movie app\n\n# # Create a movie based on user input\n# mutation CreateMovie($title: String!, $genre: String!, $imageUrl: String!)\n# @auth(level: USER_EMAIL_VERIFIED) {\n#   movie_insert(data: { title: $title, genre: $genre, imageUrl: $imageUrl })\n# }\n\n# # Upsert (update or insert) a user's username based on their auth.uid\n# mutation UpsertUser($username: String!) @auth(level: USER) {\n#   # The \"auth.uid\" server value ensures that users can only register their own user.\n#   user_upsert(data: { id_expr: \"auth.uid\", username: $username })\n# }\n\n# # Add a review for a movie\n# mutation AddReview($movieId: UUID!, $rating: Int!, $reviewText: String!)\n# @auth(level: USER) {\n#   review_upsert(\n#     data: {\n#       userId_expr: \"auth.uid\"\n#       movieId: $movieId\n#       rating: $rating\n#       reviewText: $reviewText\n#       # reviewDate defaults to today in the schema. No need to set it manually.\n#     }\n#   )\n# }\n\n# # Logged in user can delete their review for a movie\n# mutation DeleteReview($movieId: UUID!) @auth(level: USER) {\n#   # The \"auth.uid\" server value ensures that users can only delete their own reviews.\n#   review_delete(key: { userId_expr: \"auth.uid\", movieId: $movieId })\n# }\n"},{"path":"queries.gql","content":"# # Example queries for a simple movie app.\n\n# # @auth() directives control who can call each operation.\n# # Anyone should be able to list all movies, so the auth level is set to PUBLIC\n# query ListMovies @auth(level: PUBLIC) {\n#   movies {\n#     id\n#     title\n#     imageUrl\n#     genre\n#   }\n# }\n\n# # List all users, only admins should be able to list all users, so we use NO_ACCESS\n# query ListUsers @auth(level: NO_ACCESS) {\n#   users {\n#     id\n#     username\n#   }\n# }\n\n# # Logged in users can list all their reviews and movie titles associated with the review\n# # Since the query uses the uid of the current authenticated user, we set auth level to USER\n# query ListUserReviews @auth(level: USER) {\n#   user(key: { id_expr: \"auth.uid\" }) {\n#     id\n#     username\n#     # <field>_on_<foreign_key_field> makes it easy to grab info from another table\n#     # Here, we use it to grab all the reviews written by the user.\n#     reviews: reviews_on_user {\n#       rating\n#       reviewDate\n#       reviewText\n#       movie {\n#         id\n#         title\n#       }\n#     }\n#   }\n# }\n\n# # Get movie by id\n# query GetMovieById($id: UUID!) @auth(level: PUBLIC) {\n#   movie(id: $id) {\n#     id\n#     title\n#     imageUrl\n#     genre\n#     metadata: movieMetadata_on_movie {\n#       rating\n#       releaseYear\n#       description\n#     }\n#     reviews: reviews_on_movie {\n#       reviewText\n#       reviewDate\n#       rating\n#       user {\n#         id\n#         username\n#       }\n#     }\n#   }\n# }\n\n# # Search for movies, actors, and reviews\n# query SearchMovie($titleInput: String, $genre: String) @auth(level: PUBLIC) {\n#   movies(\n#     where: {\n#       _and: [{ genre: { eq: $genre } }, { title: { contains: $titleInput } }]\n#     }\n#   ) {\n#     id\n#     title\n#     genre\n#     imageUrl\n#   }\n# }\n"}]}}]}
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] i  dataconnect\connector\connector.yaml is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  If you'd like to add the generated SDK to your app later, run firebase init dataconnect:sdk 
+[info] 
+=== Firestore Setup
+[debug] [2025-04-04T18:56:11.717Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:11.717Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:11.717Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firestore.googleapis.com [none]
+[debug] [2025-04-04T18:56:11.717Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firestore.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:56:13.684Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firestore.googleapis.com 200
+[debug] [2025-04-04T18:56:13.684Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/firestore.googleapis.com [omitted]
+[debug] [2025-04-04T18:56:13.684Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:13.684Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:13.684Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default) [none]
+[debug] [2025-04-04T18:56:14.061Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default) 200
+[debug] [2025-04-04T18:56:14.061Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/nirbhi-d7673/databases/(default) {"name":"projects/nirbhi-d7673/databases/(default)","uid":"65e6fd93-a931-4b30-af2e-ce57826a7d18","createTime":"2025-03-26T07:52:20.509562Z","updateTime":"2025-03-26T07:52:20.509562Z","locationId":"asia-south2","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-04-04T17:56:14.162529Z","appEngineIntegrationMode":"DISABLED","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IOPRpYaHv4wDMIaG5fK1tIwD"}
+[debug] [2025-04-04T18:56:14.061Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-04T18:56:14.061Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-04T18:56:14.062Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-04T18:56:14.062Z] > authorizing via signed-in user (prince16us@gmail.com)
+[debug] [2025-04-04T18:56:14.062Z] [iam] checking project nirbhi-d7673 for permissions ["firebase.projects.get"]
+[debug] [2025-04-04T18:56:14.062Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:14.062Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:14.062Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions [none]
+[debug] [2025-04-04T18:56:14.062Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:56:14.062Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:56:16.092Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions 200
+[debug] [2025-04-04T18:56:16.092Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Genkit Setup
+[debug] [2025-04-04T18:56:42.708Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-04T18:56:42.708Z] > authorizing via signed-in user (prince16us@gmail.com)
+[debug] [2025-04-04T18:56:42.708Z] [iam] checking project nirbhi-d7673 for permissions ["firebase.projects.get"]
+[debug] [2025-04-04T18:56:42.708Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:42.708Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:42.708Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions [none]
+[debug] [2025-04-04T18:56:42.708Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:56:42.708Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:56:44.337Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions 200
+[debug] [2025-04-04T18:56:44.337Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:56:44.337Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:44.337Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:44.337Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:44.337Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:56:44.337Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-04T18:56:44.337Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:56:44.338Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-04T18:56:44.338Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:56:46.462Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-04T18:56:46.462Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-04T18:56:46.465Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-04T18:56:46.465Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] i  Skipping write of functions/package.json 
+[info] i  functions/.eslintrc.js is unchanged 
+[info] i  Skipping write of functions/tsconfig.json 
+[info] i  functions/tsconfig.dev.json is unchanged 
+[info] i  functions/src/index.ts is unchanged 
+[info] i  Skipping write of functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.4.0
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] 
+Login to Google Cloud using:
+[info]     gcloud auth application-default login --project undefined
+
+[info] Then start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-04-04T18:58:27.577Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-04T18:58:27.577Z] > authorizing via signed-in user (prince16us@gmail.com)
+[debug] [2025-04-04T18:58:27.577Z] [iam] checking project nirbhi-d7673 for permissions ["firebase.projects.get"]
+[debug] [2025-04-04T18:58:27.577Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:58:27.577Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:58:27.577Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions [none]
+[debug] [2025-04-04T18:58:27.577Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:58:27.577Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:58:29.533Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions 200
+[debug] [2025-04-04T18:58:29.533Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nirbhi-d7673:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-04T18:58:29.533Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:58:29.533Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:58:29.533Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:58:29.533Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:58:29.533Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-04T18:58:29.533Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:58:29.534Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-04T18:58:29.534Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/nirbhi-d7673
+[debug] [2025-04-04T18:58:31.717Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-04T18:58:31.717Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-04T18:58:31.718Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-04T18:58:31.718Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nirbhi-d7673/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] i  nirbhi/requirements.txt is unchanged 
+[info] i  nirbhi/.gitignore is unchanged 
+[info] i  nirbhi/main.py is unchanged 
+[debug] [2025-04-04T18:59:07.726Z] Running command with virtualenv: command="C:\Users\iiutk\OneDrive\Desktop\GDG\H2S\H2S\nirbhi\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2025-04-04T18:59:10.659Z] Running command with virtualenv: command="C:\Users\iiutk\OneDrive\Desktop\GDG\H2S\H2S\nirbhi\venv\Scripts\activate.bat", args=["","&&","python.exe","-m","pip","install","-r","requirements.txt"]
+[info] 
+=== Apphosting Setup
+[debug] [2025-04-04T18:59:27.221Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:59:27.221Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:59:27.221Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo [none]
+[debug] [2025-04-04T18:59:28.761Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo 200
+[debug] [2025-04-04T18:59:28.761Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/nirbhi-d7673/billingInfo {"name":"projects/nirbhi-d7673/billingInfo","projectId":"nirbhi-d7673","billingAccountName":"billingAccounts/01E183-DD8A48-041ECA","billingEnabled":true}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2025-04-04T18:59:28.765Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:59:28.765Z] Checked if tokens are valid: true, expires at: 1743796134092
+[debug] [2025-04-04T18:59:28.765Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nirbhi-d7673 [none]
+[debug] [2025-04-04T18:59:29.687Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nirbhi-d7673 200
+[debug] [2025-04-04T18:59:29.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nirbhi-d7673 {"projectId":"nirbhi-d7673","projectNumber":"19309218581","displayName":"Nirbhi","name":"projects/nirbhi-d7673","resources":{"hostingSite":"nirbhi-d7673","realtimeDatabaseInstance":"nirbhi-d7673-default-rtdb"},"state":"ACTIVE","etag":"1_49f0aa0d-e052-4392-b431-125ed442a885"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2025-04-04T19:01:18.742Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-04-04T19:01:19.304Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-04-04T19:01:19.304Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.6.0","browserURL":"https://www.gstatic.com/firebasejs/11.6.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.6.0/firebase.tgz"},"live":{"version":"11.6","browserURL":"https://www.gstatic.com/firebasejs/live/11.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.6.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.6.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.6.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.6.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.6.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.6.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.6.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.6.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.6.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.6.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] +  Wrote storage.rules 
+[info] 
+=== Emulators Setup
+[info] i  apphosting: Initializing Emulator {"metadata":{"emulator":{"name":"apphosting"},"message":"Initializing Emulator"}}

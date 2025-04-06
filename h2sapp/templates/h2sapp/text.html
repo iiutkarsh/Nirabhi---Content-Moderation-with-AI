@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="">
+    <h1>Text Analysis</h1> 
+    <form method="POST" action="{% url 'analyze' %}">
+        {% csrf_token %}
+        <label for="text">Enter Text:</label><br>
+        <textarea name="text" id="text" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+    {% if result %}
+        <h2>Analysis Result:</h2>
+        <p>The submitted text is: <strong>{{ result }}</strong></p>
+    {% endif %}
+
+    {% if error %}
+        <h2>Error:</h2>
+        <p>{{ error }}</p>
+    {% endif %}
+</div>
+{% endblock %}

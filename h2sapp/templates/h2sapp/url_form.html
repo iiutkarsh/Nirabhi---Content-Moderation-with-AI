@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="document">
+    <h2>Analyze Webpage Content</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="url" name="url" placeholder="Enter webpage URL" required>
+        <button type="submit">Analyze</button>
+    </form>
+   
+</div>
+{% endblock %}

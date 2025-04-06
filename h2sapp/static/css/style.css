@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    /* background-color: rgb(101, 206, 190); */
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color:#ffffff;
+    margin: 0;
+    padding: 0;
+}
+form {
+    margin-top: 20px;
+}
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+/* button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+} */
+/*               base    */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  a {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .discription{
+   display: flex;
+    height: 4rem;
+    color: #00bcd4;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  .tools{
+    height: 10rem;
+    display: flex;
+    margin-top: 3rem;
+    justify-content:space-evenly;
+    
+  }
+  .tool{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 18rem;
+    width: 15rem;
+    background-color:#333;
+    border-radius: 1rem;
+  }
+  #t1{
+  margin:0.5rem;
+  border-radius:0.5rem;
+  }
+  .divbox{
+    display: flex;
+    justify-content: center;
+   
+  }
+  #reportpage{
+    text-align: center;
+    padding-top: 3rem;
+    height:11rem;
+    width: 30rem;
+    margin-top: 2rem;
+    background-color: #333;
+    border-radius: 1rem;
+  }
+  #loginpage{
+    text-align: center;
+    padding-top: 3rem;
+    height:15rem;
+    width: 30rem;
+    margin-top: 2rem;
+    background-color: #333;
+    border-radius: 1rem;
+  }
+  #registerpage{
+    text-align: center;
+    padding-top: 1rem;
+    height:20rem;
+    width: 30rem;
+    margin-top: 1rem;
+    background-color: #333;
+    border-radius: 1rem;
+  }
+  #analysispage{
+   text-align: center;
+   height:17rem;
+   width:40rem;
+   background-color: #333;
+   border-radius: 1rem;
+   margin-top: 3rem;
+  }
+  input{
+    width: 26rem;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+  }
+ #analysispage h1,p,label,select{
+  margin-top: 5rem;
+ }
+
+
+ /*    document  */
+.ducument form,h1,h2,form{
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+ }
+
+
+/*      result      */
+.rusult{
+  width: 1080px;
+}
+
+/*         text            */
+.textresult{
+  color: #fff;
+  background-color: #ffffff;
+}

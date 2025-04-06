@@ -1,0 +1,31 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="document">
+    <h2>Upload Document for Analysis</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="document" required>
+        <button type="submit">Analyze</button>
+    </form>
+</div>
+{% endblock %}
+{% comment %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Moderation</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h2>Upload Document for Analysis</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="document" required>
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html> {% endcomment %}

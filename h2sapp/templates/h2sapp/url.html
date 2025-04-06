@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <button id="home">Home</button>
+        <button id="report">Report</button>
+        <button id="login">Login</button>
+        <button id="register">Register</button>
+    </div>
+    <!-- home section -->
+    <div id="homepage" class="section">
+        <div class="discription">
+            <h2>Your Shield Against Online Harm</h2>
+            <h3>AI-Powered Content Analysis</h3>
+        </div>
+        <div class="tools">
+            <div class="tool"><img id="t1" src="/homepage\assets\Text $ URL Moderation.jpg" alt="Moderation img"><button
+                    class="btn1" id="analysisBtn">For Text & URL Content</button></div>
+            <div class="tool"><button class="btn">Video Verification</button></div>
+            <div class="tool"><button class="btn">Voice Verification</button></div>
+            <div class="tool"><button class="btn">voice&video Both</button></div>
+            <div class="tool"><button class="btn">For More Tool</button></div>
+        </div>
+    </div>
+    <!-- Report Section -->
+    <div class="divbox">
+        <div id="reportpage" class="section" style="display:none;">
+            <h1>Report a Page</h1>
+            <p>Please log in to report abusive or objectionable content.</p>
+            <button>Login</button>
+            <button>Register</button>
+        </div>
+    </div>
+    <!-- Login Section -->
+    <div class="divbox">
+        <div id="loginpage" class="section" style="display:none;">
+            <h1>Login</h1>
+            <form>
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email" required />
+
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password" required />
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- Register Section -->
+    <div class="divbox">
+        <div id="registerpage" class="section" style="display:none;">
+            <h1>Register</h1>
+            <form>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your name" required />
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email" required />
+
+                <label>Password:</label>
+                <input type="password" placeholder="Create a password" required />
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <!--textUrlanalysis-->
+    <div class="divbox">
+        <div id="analysispage" class="section" style="display: none;">
+            <h1>Content Analyzer</h1>
+            <p>Analyze any text or web page for abusive or objectionable content.</p>
+
+            <label for="inputType">Choose Input Type:</label>
+            <select id="inputType">
+                <option value="text">Text</option>
+                <option value="url">URL</option>
+            </select>
+            <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+            <input type="url" id="urlInput" placeholder="Enter URL to analyze..." style="display: none;" />
+            <br>
+            <button>Analyze</button>
+            <p id="resultMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
