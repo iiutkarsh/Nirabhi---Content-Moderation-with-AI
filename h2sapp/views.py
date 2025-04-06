@@ -5,10 +5,6 @@ from django.http import JsonResponse
 from django.urls import path
 from . import views
 
-urlpatterns = [
-    path('api/hello/', views.hello_api, name='hello_api'),
-]
-
 def hello_api(request):
     return JsonResponse({'message': 'Hello from the backend!'})
 
