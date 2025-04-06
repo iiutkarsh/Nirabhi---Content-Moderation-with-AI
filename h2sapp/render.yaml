@@ -3,7 +3,7 @@ services:
     name: h2s-backend
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn H2S.wsgi"
+    startCommand: "gunicorn H2S.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: H2S.settings
