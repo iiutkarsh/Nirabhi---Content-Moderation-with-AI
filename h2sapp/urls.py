@@ -12,5 +12,5 @@ urlpatterns = [
     path("analyze/", views.analyze_text, name="analyze"),
     path("result/",views.result,name="result")  
     path('admin/', admin.site.urls),
-    path('', include('h2sapp.urls')),  # Add this line
+    path('', include('h2sapp.urls'))
 ]
