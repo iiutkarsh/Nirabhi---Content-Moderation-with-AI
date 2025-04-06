@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 from h2sapp.views import moderate_url, moderate_document
-
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('',views.base,name="base"),
