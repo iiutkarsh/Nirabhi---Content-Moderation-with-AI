@@ -24,3 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('h2sapp.urls'))
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
